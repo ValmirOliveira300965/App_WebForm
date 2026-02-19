@@ -32,7 +32,7 @@
 
                 <asp:BoundField 
                     DataField="Telefone" 
-                    HeaderText="Telefone" />
+                    HeaderText="Telefone(s)" />
 
             </Columns>
 
