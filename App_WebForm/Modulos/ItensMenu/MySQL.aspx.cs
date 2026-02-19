@@ -26,7 +26,8 @@ namespace App_WebForm
                     string xComando = "SELECT *," +
                                              "((MONTH(nascimento)*100)+DAY(nascimento)) AS _aniversario, " +
                                              "(" + DateTime.Now.Year.ToString() + " - YEAR(nascimento)) AS _idade " +
-                                      "FROM iavn_cadastro ORDER BY nome";
+                                      "FROM iavn_cadastro " +
+                                      "ORDER BY nome";
 
                     if (clMySQL.MySQL_Executar(xComando))
                     {
