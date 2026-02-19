@@ -13,7 +13,7 @@
 
         <address>
             <strong>Support:</strong>   <a href="mailto:valmiroliveira.vo@gmail.com">valmiroliveira.vo@gmail.com</a><br />
-            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing</a>
+            <strong>Marketing:</strong> <a href="mailto:marketing@example.com">Marketing</a>
         </address>
     </main>
 </asp:Content>
