@@ -26,13 +26,10 @@ Conhecimento de design patterns, TDD e DDD
 
 
 
-Quero aprender, na prática, como estruturar uma API .NET usando Clean Architecture com foco em testabilidade, incluindo:
+Eu tenho um repositório no GitHub que atualmente usa a branch "master".
+Quero renomeá-la para "main" corretamente (tanto no GitHub quanto no Visual Studio),
+criar as branches "dev" e "test" com boas práticas profissionais,
+configurar regras de proteção para cada uma delas,
+e entender qual deve ser o fluxo ideal entre main → dev → test usando PRs e versionamento por tags.
 
-- separação de camadas
-- uso de InMemoryDatabase
-- testes unitários com xUnit e Moq
-- testes de integração com WebApplicationFactory
-- e como configurar isso em um pipeline CI/CD simples.
-
-Podemos montar um projeto exemplo do zero, passo a passo?
-
+Pode me orientar passo a passo, explicando também os impactos técnicos e como evitar conflitos?
