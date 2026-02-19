@@ -1,0 +1,38 @@
+﻿
+• Sobre "Experiência em Cloud AWS", pode dizer em entrevista:
+
+Eu mesmo subi uma aplicação ASP.NET na AWS usando EC2, conectei com RDS e implementei upload em S3.
+
+
+• Cloud: Experiência prática com GCP (Google Cloud Platform)
+
+Tenho experiência prática com AWS (EC2, RDS, IAM, publicação de aplicação .NET com IIS).
+Não trabalhei diretamente com GCP, mas os conceitos são equivalentes e tenho facilidade de adaptação entre provedores cloud.
+
+
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Qual é seu nível de experiência com testes unitários, testes automatizados e de integração em C#?
+
+Arquitetura e Padrões: Aplicação prática de Design Patterns (Strategy, Command, Singleton, Adapter, Decorator) e padrões modernos como CQRS e Clean Code
+
+Cloud: Experiência prática com GCP (Google Cloud Platform)
+
+Containers: Experiência sólida com Docker e Kubernetes
+
+Uso ativo de SonarQube para análise estática de código
+
+Conhecimento de design patterns, TDD e DDD
+
+
+
+Quero aprender, na prática, como estruturar uma API .NET usando Clean Architecture com foco em testabilidade, incluindo:
+
+- separação de camadas
+- uso de InMemoryDatabase
+- testes unitários com xUnit e Moq
+- testes de integração com WebApplicationFactory
+- e como configurar isso em um pipeline CI/CD simples.
+
+Podemos montar um projeto exemplo do zero, passo a passo?
+

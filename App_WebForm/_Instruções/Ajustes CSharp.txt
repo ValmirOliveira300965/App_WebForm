@@ -1,0 +1,14 @@
+﻿
+1. Web.config (connection strings / ambiente)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+Ajuste ConnectionStrings para apontar pro SQL Server correto (local ou remoto).
+Se usar Integrated Security=True, a identidade que acessa o SQL será a do App Pool (vai precisar permissão no SQL)
+
+2. Permissões para pastas de upload / temp
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+Se usar:
+- upload (FileUpload)
+- gerar PDF, excel, logs
+Crie subpastas e dê Modify apenas nelas.
+
+
