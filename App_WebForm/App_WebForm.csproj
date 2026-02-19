@@ -99,6 +99,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="Modulos\ItensMenu\MySQL.aspx" />
     <Content Include="Modulos\ItensMenu\Sobre.aspx" />
     <Content Include="Modulos\ItensMenu\Contatos.aspx" />
