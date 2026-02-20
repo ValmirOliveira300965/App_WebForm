@@ -26,10 +26,5 @@ Conhecimento de design patterns, TDD e DDD
 
 
 
-Eu tenho um repositório no GitHub que atualmente usa a branch "master".
-Quero renomeá-la para "main" corretamente (tanto no GitHub quanto no Visual Studio),
-criar as branches "dev" e "test" com boas práticas profissionais,
-configurar regras de proteção para cada uma delas,
-e entender qual deve ser o fluxo ideal entre main → dev → test usando PRs e versionamento por tags.
+Hoje eu ainda gostaria de saber os "truques" para alterar o uso de uma outra branche sem perder as alterações da branche atual, o uso seguro de Stashes e outras dicas atinentes à manutenção do código que assegure a não perda de tempo e de trabalhos já realizados.
 
-Pode me orientar passo a passo, explicando também os impactos técnicos e como evitar conflitos?
