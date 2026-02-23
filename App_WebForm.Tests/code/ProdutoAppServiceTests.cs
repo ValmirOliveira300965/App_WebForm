@@ -4,6 +4,13 @@ using App_WebForm.Contracts;
 using Moq;
 using Xunit;
 
+/* Mock: Testes de:
+   * Comportamento
+   * Fluxo
+   * Chamadas
+   * Interações
+*/
+
 namespace App_WebForm.Tests
 {
     public class ProdutoAppServiceTests

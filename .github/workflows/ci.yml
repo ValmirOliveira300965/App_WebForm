@@ -25,5 +25,32 @@ jobs:
         run: msbuild App_WebForm.sln /p:Configuration=Release
 
       - name: Run Tests
+        shell: pwsh
         run: |
-          vstest.console.exe **\bin\Release\*Tests.dll
+            # Localiza o Visual Studio instalado no runner
+            $vswhere = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe"
+            if (!(Test-Path $vswhere)) { throw "vswhere.exe not found: $vswhere" }
+
+            $installPath = & $vswhere -latest -products * -requires Microsoft.Component.MSBuild -property installationPath
+            if (-not $installPath) { throw "Visual Studio installationPath not found" }
+
+            # Caminho padrão do vstest.console.exe dentro da instalação do VS
+            $vstest = Join-Path $installPath "Common7\IDE\Extensions\TestPlatform\vstest.console.exe"
+            if (!(Test-Path $vstest)) { throw "vstest.console.exe not found: $vstest" }
+
+            # Encontra o dll de testes compilado (Release)
+            $testDlls = Get-ChildItem -Recurse -Filter "*Tests.dll" | Where-Object { $_.FullName -like "*\bin\Release\*" }
+
+            if (-not $testDlls) {
+              Write-Host "No test assemblies found in bin\Release. Searching Debug as fallback..."
+              $testDlls = Get-ChildItem -Recurse -Filter "*Tests.dll" | Where-Object { $_.FullName -like "*\bin\Debug\*" }
+            }
+
+            if (-not $testDlls) {
+              throw "No test assemblies found in bin\\Release or bin\\Debug."
+            }
+
+            Write-Host "Test assemblies:"
+            $testDlls | ForEach-Object { Write-Host $_.FullName }
+
+            & $vstest $testDlls.FullName
