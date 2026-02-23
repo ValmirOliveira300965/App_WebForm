@@ -193,9 +193,14 @@
     <Content Include="_Instruções\4 - Domínio e HTTPS.docx" />
     <Content Include="_Instruções\0 - Glossário.docx" />
     <Content Include="_Instruções\5 - Git - Plataformas - Entrega %28CI-CD%29.docx" />
+    <Content Include="_Instruções\6 - Testes.docx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\ProdutoAppService.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Contracts\IProdutoRepository.cs" />
+    <Compile Include="Domain\CalculoRules.cs" />
+    <Compile Include="Domain\ProdutoRules.cs" />
     <Compile Include="Modulos\ItensMenu\MySQL.aspx.cs">
       <DependentUpon>MySQL.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -251,6 +256,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Infrastructure\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

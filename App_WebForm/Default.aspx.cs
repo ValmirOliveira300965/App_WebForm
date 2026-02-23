@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App_WebForm.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,19 @@ namespace App_WebForm
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnTestes_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var termo = ProdutoRules.NormalizarBusca(txtBusca.Text);
+                lblMensagem.Text = $"Buscando por: {termo}";
+            }
+            catch (Exception ex)
+            {
+                lblMensagem.Text = ex.Message;
+            }
         }
     }
 }

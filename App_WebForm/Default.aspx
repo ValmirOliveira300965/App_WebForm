@@ -39,6 +39,13 @@
                 </p>
             </section>
         </div>
+
+        <div class="row">
+            <asp:TextBox ID="txtBusca" runat="server"></asp:TextBox>
+            <asp:Button ID="btnTestes" runat="server" Text="Testes" OnClick="btnTestes_Click" />
+            <asp:Label ID="lblMensagem" runat="server"></asp:Label>
+        </div>
+
     </main>
 
 </asp:Content>

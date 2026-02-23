@@ -1,15 +1,2 @@
-﻿Meu conhecimento sobre GIT se limita a:
-- COMMIT
-- MERGE
-- Pull Request
-
-Eu queria me aprofundar sobre o assunto para:
-- Conhecer os princípios de áreas com códigos fontes como DEV, Testes e Produção
-- Rejeitar ou aprovar o PR
-- Definir versões de projeto
-- Após a aprovação de uma PR, fazer o MERGE para área de DEV, Teste ou produção
-- Me familiarizar com ferramentas, mecanismos e dicas numa BRANCHE para cópias de segurança, recuperação, análises de modificações de códigos, etc
-- Outros pontos não mencionados por falta de vivência no assunto.
-
-
-
+﻿
+Eu queria saber mais sobre o assunto "testes unitários, testes automatizados e de integração em C#" e obter exemplos práticos de como eu poderia aplicar esses testes como desenvolvedor.

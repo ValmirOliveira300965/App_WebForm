@@ -12,19 +12,17 @@ Não trabalhei diretamente com GCP, mas os conceitos são equivalentes e tenho f
 
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-Qual é seu nível de experiência com testes unitários, testes automatizados e de integração em C#?
+
 
 Arquitetura e Padrões: Aplicação prática de Design Patterns (Strategy, Command, Singleton, Adapter, Decorator) e padrões modernos como CQRS e Clean Code
 
-Cloud: Experiência prática com GCP (Google Cloud Platform)
 
 Containers: Experiência sólida com Docker e Kubernetes
 
-Uso ativo de SonarQube para análise estática de código
-
 Conhecimento de design patterns, TDD e DDD
 
+React.js
 
 
-Hoje eu ainda gostaria de saber os "truques" para alterar o uso de uma outra branche sem perder as alterações da branche atual, o uso seguro de Stashes e outras dicas atinentes à manutenção do código que assegure a não perda de tempo e de trabalhos já realizados.
+
 
